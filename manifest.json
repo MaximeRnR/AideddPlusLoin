@@ -1,0 +1,26 @@
+{
+  "name": "AideDDPlusLoin",
+  "description": "Transferer votre personnage d'Aidedd sur DDPlusLoin",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "scripting",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "/images/ddpl20.png"
+  },
+  "host_permissions": [
+    "https://www.aidedd.org/"
+  ],
+  "externally_connectable": {
+    "matches": ["*://localhost/*", "*://www.aidedd.org/*"]
+  }
+}
