@@ -8,7 +8,7 @@ new Promise((resolve, reject) => {
    });
 }).then(() => {
    document.querySelector('.activated').setAttribute('disabled', 'true');
-   document.querySelector('.activated').innerHTML = "Lien Actif !";
+   document.querySelector('.activated').innerHTML = "Personnage extrait !";
 });
 
 
